@@ -6,9 +6,10 @@ cv识别图像中的苔藓覆盖率
 3.统计结果输出(image_name, coverage)
 
 
-在Linux/macos上运行
+在Linux/macos上运行, 前置条件安装python 3.12
+
 1. python -m venv test_env
-2. source ./test_env/bin/activate
+2. source ./test_env/bin/activate (windows 上 ./test_env/Scripts/activate)
 3. pip install -r requirements.txt
 4. 准备好调查样方文件夹
 5. python ./run_light.py
