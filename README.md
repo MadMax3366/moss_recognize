@@ -1,16 +1,24 @@
 # cv_pic_2_coverage
-cv识别图像中的苔藓覆盖率
 
-1.处理原始图像，提取样框内的图像
-2.cv识别图像内的苔藓，计算覆盖率
-3.统计结果输出(image_name, coverage)
+Estimate moss coverage in images using computer vision
 
 
-在Linux/macos上运行, 前置条件安装python 3.12
+Overview
+	1.	Preprocess raw images and extract quadrat (sample frame) regions.
+	2.	Use CV methods to identify moss within the quadrat and calculate coverage rate.
+	3.	Output statistical results: (image_name, coverage).
 
-1. python -m venv test_env
-2. source ./test_env/bin/activate (windows 上 ./test_env/Scripts/activate)
-3. pip install -r requirements.txt
-4. 准备好调查样方文件夹
-5. python ./run_light.py
+Environment
+
+Designed to run on Linux/macOS.
+Requires Python 3.12.
+
+1. Create a virtual environment:
+   python -m venv test_env
+2. Activate the virtual environment:
+   source ./test_env/bin/activate
+3. Install dependencies:
+   pip install -r requirements.txt
+4. Prepare a folder containing your quadrat (sample plot) images.
+   python ./run_light.py
 
